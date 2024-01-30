@@ -47,7 +47,7 @@ controlnet_path = f'./checkpoints/ControlNetModel'
 controlnet = ControlNetModel.from_pretrained(controlnet_path, torch_dtype=dtype)
 
 
-def main(pretrained_model_name_or_path="wangqixun/YamerMIX_v8"):
+def main(pretrained_model_name_or_path="wangqixun/YamerMIX_v8", face_analysis_root="./"):
 
     if pretrained_model_name_or_path.endswith(
             ".ckpt"
