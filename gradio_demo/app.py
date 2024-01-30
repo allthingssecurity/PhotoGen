@@ -35,6 +35,7 @@ STYLE_NAMES = list(styles.keys())
 DEFAULT_STYLE_NAME = "Watercolor"
 
 # Load face encoder
+
 app = FaceAnalysis(name='antelopev2', root=face_analysis_root, providers=['CUDAExecutionProvider', 'CPUExecutionProvider'])
 app.prepare(ctx_id=0, det_size=(640, 640))
 
@@ -44,7 +45,7 @@ controlnet_path = f'./checkpoints/ControlNetModel'
 
 # Load pipeline
 controlnet = ControlNetModel.from_pretrained(controlnet_path, torch_dtype=dtype)
-parser.add_argument("--face_analysis_root", type=str, default="./")
+
 
 def main(pretrained_model_name_or_path="wangqixun/YamerMIX_v8"):
 
@@ -418,6 +419,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--pretrained_model_name_or_path", type=str, default="wangqixun/YamerMIX_v8"
     )
+    parser.add_argument("--face_analysis_root", type=str, default="./")
     args = parser.parse_args()
 
-    main(args.pretrained_model_name_or_path)
+    main(args.pretrained_model_name_or_path, args.face_analysis_root)
