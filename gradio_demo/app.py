@@ -36,8 +36,6 @@ DEFAULT_STYLE_NAME = "Watercolor"
 
 # Load face encoder
 
-app = FaceAnalysis(name='antelopev2', root=face_analysis_root, providers=['CUDAExecutionProvider', 'CPUExecutionProvider'])
-app.prepare(ctx_id=0, det_size=(640, 640))
 
 # Path to InstantID models
 face_adapter = f'./checkpoints/ip-adapter.bin'
@@ -48,6 +46,8 @@ controlnet = ControlNetModel.from_pretrained(controlnet_path, torch_dtype=dtype)
 
 
 def main(pretrained_model_name_or_path="wangqixun/YamerMIX_v8", face_analysis_root="./"):
+    app = FaceAnalysis(name='antelopev2', root=face_analysis_root, providers=['CUDAExecutionProvider', 'CPUExecutionProvider'])
+    app.prepare(ctx_id=0, det_size=(640, 640))
 
     if pretrained_model_name_or_path.endswith(
             ".ckpt"
