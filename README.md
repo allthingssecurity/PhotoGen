@@ -1,24 +1,9 @@
 <div align="center">
 <h1>InstantID: Zero-shot Identity-Preserving Generation in Seconds</h1>
 
+
+
 ## Download
-
-You can directly download the model from [Huggingface](https://huggingface.co/InstantX/InstantID).
-You also can download the model in python script:
-
-```python
-from huggingface_hub import hf_hub_download
-hf_hub_download(repo_id="InstantX/InstantID", filename="ControlNetModel/config.json", local_dir="./checkpoints")
-hf_hub_download(repo_id="InstantX/InstantID", filename="ControlNetModel/diffusion_pytorch_model.safetensors", local_dir="./checkpoints")
-hf_hub_download(repo_id="InstantX/InstantID", filename="ip-adapter.bin", local_dir="./checkpoints")
-```
-
-If you cannot access to Huggingface, you can use [hf-mirror](https://hf-mirror.com/) to download models.
-```python
-export HF_ENDPOINT=https://hf-mirror.com
-huggingface-cli download --resume-download InstantX/InstantID --local-dir checkpoints
-```
-
 For face encoder, you need to manually download via this [URL](https://github.com/deepinsight/insightface/issues/1896#issuecomment-1023867304) to `models/antelopev2` as the default link is invalid. Once you have prepared all models, the folder tree should be like:
 Make sure the antelopev2.zip is unizipped to antelopev2 dir under model dir.
 ```
