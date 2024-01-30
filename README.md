@@ -4,7 +4,7 @@
 
 
 ## Download
-For face encoder, you need to manually download via this [URL](https://github.com/deepinsight/insightface/issues/1896#issuecomment-1023867304) to `models/antelopev2` as the default link is invalid. Once you have prepared all models, the folder tree should be like:
+For face encoder, you need to manually download via this [URL](https://github.com/deepinsight/insightface/issues/1896#issuecomment-1023867304) to `models/antelopev2` as the default link is invalid.
 Make sure the antelopev2.zip is unizipped to antelopev2 dir under model dir. For my demo I have mounted google drive and unzipped antelopev2 under /content/drive/MyDrive/models. You can choose own directory structure if you want.
 
 
