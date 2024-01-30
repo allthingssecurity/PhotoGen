@@ -264,37 +264,23 @@ def main(pretrained_model_name_or_path="wangqixun/YamerMIX_v8"):
 
     ### Description
     title = r"""
-    <h1 align="center">InstantID: Zero-shot Identity-Preserving Generation in Seconds</h1>
+    <h1 align="center">Image Generation quickly</h1>
     """
 
     description = r"""
-    <b>Official 🤗 Gradio demo</b> for <a href='https://github.com/InstantID/InstantID' target='_blank'><b>InstantID: Zero-shot Identity-Preserving Generation in Seconds</b></a>.<br>
+   
 
     How to use:<br>
     1. Upload a person image. For multiple person images, we will only detect the biggest face. Make sure face is not too small and not significantly blocked or blurred.
     2. (Optionally) upload another person image as reference pose. If not uploaded, we will use the first person image to extract landmarks. If you use a cropped face at step1, it is recommeneded to upload it to extract a new pose.
     3. Enter a text prompt as done in normal text-to-image models.
     4. Click the <b>Submit</b> button to start customizing.
-    5. Share your customizd photo with your friends, enjoy😊!
+    5. Share your customizd photo with your friends and have fun.
     """
 
-    article = r"""
-    ---
-    📝 **Citation**
-    <br>
-    If our work is helpful for your research or applications, please cite us via:
-    ```bibtex
-    @article{wang2024instantid,
-    title={InstantID: Zero-shot Identity-Preserving Generation in Seconds},
-    author={Wang, Qixun and Bai, Xu and Wang, Haofan and Qin, Zekui and Chen, Anthony},
-    journal={arXiv preprint arXiv:2401.07519},
-    year={2024}
-    }
-    ```
-    📧 **Contact**
-    <br>
-    If you have any questions, please feel free to open an issue or directly reach us out at <b>haofanwang.ai@gmail.com</b>.
-    """
+    article = """
+    This is a zero shot image identity extraction.
+     """
 
     tips = r"""
     ### Usage tips of InstantID
