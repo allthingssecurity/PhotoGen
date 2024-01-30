@@ -1,64 +1,6 @@
 <div align="center">
 <h1>InstantID: Zero-shot Identity-Preserving Generation in Seconds</h1>
 
-[**Qixun Wang**](https://github.com/wangqixun)<sup>12</sup> · [**Xu Bai**](https://huggingface.co/baymin0220)<sup>12</sup> · [**Haofan Wang**](https://haofanwang.github.io/)<sup>12*</sup> · [**Zekui Qin**](https://github.com/ZekuiQin)<sup>12</sup> · [**Anthony Chen**](https://antonioo-c.github.io/)<sup>123</sup> · Huaxia Li<sup>2</sup> · Xu Tang<sup>2</sup>
-
-<sup>1</sup>InstantX Team · <sup>2</sup>Xiaohongshu Inc · <sup>3</sup>Peking University
-
-<sup>*</sup>corresponding authors
-
-{haofanwang.ai, wangqixun.ai}@gmail.com
-
-<a href='https://instantid.github.io/'><img src='https://img.shields.io/badge/Project-Page-green'></a>
-<a href='https://arxiv.org/abs/2401.07519'><img src='https://img.shields.io/badge/Technique-Report-red'></a>
-<a href='https://huggingface.co/papers/2401.07519'><img src='https://img.shields.io/static/v1?label=Paper&message=Huggingface&color=orange'></a> 
-[![GitHub](https://img.shields.io/github/stars/InstantID/InstantID?style=social)](https://github.com/InstantID/InstantID)
-
-<a href='https://huggingface.co/spaces/InstantX/InstantID'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue'></a>
-[![ModelScope](https://img.shields.io/badge/ModelScope-Studios-blue)](https://modelscope.cn/studios/instantx/InstantID/summary)
-[![Open in OpenXLab](https://cdn-static.openxlab.org.cn/app-center/openxlab_app.svg)](https://openxlab.org.cn/apps/detail/InstantX/InstantID)
-
-</div>
-
-InstantID is a new state-of-the-art tuning-free method to achieve ID-Preserving generation with only single image, supporting various downstream tasks.
-
-<img src='assets/applications.png'>
-
-## Release
-- [2024/01/23] 🔥 Our pipeline has been merged into [diffusers](https://github.com/huggingface/diffusers/blob/main/examples/community/pipeline_stable_diffusion_xl_instantid.py)!
-- [2024/01/22] 🔥 We release the [pre-trained checkpoints](https://huggingface.co/InstantX/InstantID), [inference code](https://github.com/InstantID/InstantID/blob/main/infer.py) and [gradio demo](https://huggingface.co/spaces/InstantX/InstantID)!
-- [2024/01/15] 🔥 We release the [technical report](https://arxiv.org/abs/2401.07519).
-- [2023/12/11] 🔥 We launch the [project page](https://instantid.github.io/).
-
-## Demos
-
-### Stylized Synthesis
-
-<p align="center">
-  <img src="assets/0.png">
-</p>
-
-### Comparison with Previous Works
-
-<p align="center">
-  <img src="assets/compare-a.png">
-</p>
-
-Comparison with existing tuning-free state-of-the-art techniques. InstantID achieves better fidelity and retain good text editability (faces and styles blend better).
-
-<p align="center">
-  <img src="assets/compare-c.png">
-</p>
-
-Comparison with pre-trained character LoRAs. We don't need multiple images and still can achieve competitive results as LoRAs without any training.
-
-<p align="center">
-  <img src="assets/compare-b.png">
-</p>
-
-Comparison with InsightFace Swapper (also known as ROOP or Refactor). However, in non-realistic style, our work is more flexible on the integration of face and background.
-
-
 ## Download
 
 You can directly download the model from [Huggingface](https://huggingface.co/InstantX/InstantID).
