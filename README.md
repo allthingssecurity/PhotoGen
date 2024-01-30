@@ -1,12 +1,16 @@
 <div align="center">
 <h1>InstantID: Zero-shot Identity-Preserving Generation in Seconds</h1>
 
-
+Here is the colab notebook https://colab.research.google.com/drive/1y1VkYx6Fg7tSnnGt2o3IsZtoaXRQ5S2-?usp=sharing
+Before using the colab notebook, follow the download step
 
 ## Download
 For face encoder, you need to manually download via this [URL](https://github.com/deepinsight/insightface/issues/1896#issuecomment-1023867304) to `models/antelopev2` as the default link is invalid.
 Make sure the antelopev2.zip is unizipped to antelopev2 dir under model dir. For my demo I have mounted google drive and unzipped antelopev2 under /content/drive/MyDrive/models. You can choose own directory structure if you want.
 
+## Colab
+
+Open the colab notebook https://colab.research.google.com/drive/1y1VkYx6Fg7tSnnGt2o3IsZtoaXRQ5S2-?usp=sharing
 
 ## Start a gradio demo
 Run the following command:
